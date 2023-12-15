@@ -1,0 +1,551 @@
+/* VEZBE 26.10 / 27.10 */
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-panel{
+    background-color: #123740;
+    padding: 7px;
+    text-align: center;
+}
+
+.top-panel a{
+    color: #f6f6f6;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.top-panel a:hover{
+    color: #549aab;
+}
+
+.navbar{
+    display: flex;
+    align-items: center; /*vertikalno centriranje*/
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.navbar .logo{
+    width: 120px;
+}
+
+.nav-menu .nav-item{
+    display: inline;
+    margin: 20px;
+    font-size: 25px;
+}
+
+.nav-menu .nav-item a{
+    text-decoration: none;
+    color: #123740;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.nav-menu .nav-item a:hover {
+    background-color: #549aab;
+}
+
+/* VEZBE 2.11 / 3.11 */
+/* HERO IMAGE */
+
+.hero-image{
+    background-image: url('../img/heroimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image .hero-card{
+    width: 600px;
+    text-align: center;
+    height: 150px;
+}
+
+.hero-image .hero-card a{
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+/* CARD HOLDER & CARD */
+
+.card-holder{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-holder .card{
+    width: 400px;
+    margin: 0px 20px;
+    height: 600px;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+    border-radius: 25px;
+}
+
+.card img{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.card h1{
+    text-align: center;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: block;
+    width: 150px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.travel-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.travel-info p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.travel-info p:nth-child(1){
+    background-color: #549aab;
+    color: #123740;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.travel-info p:nth-child(2){
+    color: #06A94D;
+    font-size: 25px;
+}
+
+/* 10/11/2023 */
+
+.button-row{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-row a{
+    background-color: #F8CE11;
+    padding: 25px 40px;
+    font-size: 30px;
+    color: black;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.country-search{
+    height: 100vh;
+}
+
+.country-search h1{
+    text-align: center;
+}
+
+.country-card-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.country-search .card-link{
+    height: 250px;
+    width: 400px;
+    text-decoration: none;
+    margin: 25px;
+    color: black;
+    transition: 0.3s ease;
+    box-shadow: 0 2px 8px 0 rgba(99, 99, 99, .2);
+}
+
+.card-link:hover{
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #5D3FD3;
+}
+
+.flag-holder{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+
+.flag-holder img{
+    width: 50px;
+}
+
+/* KONTAKT STRANICA */
+
+.contact-form{
+    width: 1000px;
+    height: 550px;
+    margin: 100px auto;
+
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-left, .form-right{
+    width: 50%;
+    height: 100%;
+}
+
+.form-left h3{ text-align: center;}
+
+.contact-icons{
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.contact-icons i{
+    margin: 0px 15px;
+}
+
+.input-fields{
+    width: 300px;
+    margin: 15px auto;
+}
+
+.input-fields input{
+    width: 280px;
+    padding: 10px;
+    border: 2px solid #123740;
+    border-radius: 10px;
+}
+
+.input-fields p{
+    margin: 0;
+}
+
+.input-fields textarea{
+    width: 100%;
+    height: 120px;
+    border: 2px solid #123740;
+    border-radius: 10px;
+}
+
+.submit-btn{
+    margin: auto;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 25px;
+    color: #123740;
+    border: 2px solid #123740;
+    background-color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.submit-btn:hover{
+    background-color: skyblue;
+}
+
+.form-right{
+    background-image: url("../img/most.jpg");
+    background-size: cover;
+}
+
+/* Footer */
+
+.footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 220px;
+    background-color: #111111;
+}
+
+.footer-social-icon{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-social-icon i{
+    font-size: 30px;
+    margin: 0px 15px;
+    color: white;
+}
+
+.footer-navbar ul{
+    text-align: center;
+}
+
+.footer-navbar ul li{
+    display: inline;
+    text-decoration: none;
+}
+
+.footer-navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer img{
+    width: 100px;
+    position: absolute;
+
+    /* ANIMACIJA */
+
+    animation-name: plane; /* Ime animacije */
+    animation-duration: 3s; /* Trajanje */
+    /* animation-direction: alternate; - Animacija se vraca nazad */
+    animation-iteration-count: infinite; /* Broj ponavljanja */
+    animation-timing-function: linear;
+
+    /* 
+        Takodje animacija se moze napisati i u jednoj liniji:
+
+        animation: plane 3s infinite linear;
+    */
+}
+
+@keyframes plane {
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: 100%;
+    }
+
+    
+    /* Takodje kljucne tacke promene animacije se mogu pisati i u procentima:
+    
+    0%{  }
+    50%{  }
+    100%{  }
+    */
+}
+
+/* RESPONSIVNOST - MOBILNI TELEFON */
+
+@media screen and (min-width:320px) and (max-width:425px) {
+    .top-panel a{
+        font-size: 20px;
+    }
+
+    .navbar{
+        display: block;
+        padding: 0px;
+    }
+    
+    .nav-menu{
+        display: block;
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-logo img{
+        display: block;
+        margin: auto;
+    }
+
+    .nav-menu .nav-item{
+        font-size: 15px;
+        margin: 5px;
+    }
+
+    .nav-menu .nav-item a{
+        padding: 5px;
+    }
+
+    .hero-image{
+        height: 30vh;
+    }
+
+    .hero-image .hero-card{
+        padding: 0px 10px;
+    }
+
+    .button-row{
+        height: 60px;
+    }
+
+    .button-row a{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .country-search h1{
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .card-holder{
+        display: block;
+        height: auto;
+        padding: 0px 5px;
+    }
+
+    .card-holder .card{
+        width: 300px;
+        height: auto;
+    }
+
+    .card-holder .card h1{
+        font-size: 25px;
+        margin: 0px;
+    }
+
+    .card-holder .card a{
+        margin: 5px auto;
+        padding: 5px;
+    }
+
+    .card-holder .card .travel-info p{
+        margin: 7px 0px;
+    }
+
+    .flag-holder{
+        width: 50px;
+    }
+
+    .country-name-holder{
+        margin-top: 50px;
+    }
+
+    /* KONTAKT STRANICA */
+
+    .contact-form{
+        width: 100%;
+        margin: 10px 0px;
+        background-image: url('../img/most.jpg');
+        background-size: cover;
+    }
+
+    .form-right{
+        display: none;
+    }
+
+    .form-left{
+        width: 100%;
+    }
+
+    .input-fields p{
+        color: white;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .navbar, .nav-menu{
+        padding: 0px;
+    }
+
+    .navbar .nav-menu .nav-item{
+        margin: 5px;
+    }
+
+    .navbar .nav-menu .nav-item a{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .navbar-logo .logo{
+        width: 70px;
+    }
+
+    .hero-image{
+        height: 50vh;
+    }
+
+    .card-holder{
+        height: auto;
+        padding: 20px 0px;
+    }
+
+    .card-holder .card{
+        height: auto;
+        margin: 0px 7px;
+    }
+
+    .card-holder .card img{
+        height: 200px;
+    }
+
+    .button-row{
+        height: 100px;
+    }
+
+    .button-row a{
+        padding: 20px;
+        font-size: 22px;
+    }
+
+    .country-card-holder .card-link{
+        width: 350px;
+        margin: 10px;
+    }
+
+    .flag-holder{
+        width: 100px;
+    }
+
+    .contact-form{
+        display: block;
+        margin: 0px auto;
+        width: 70%;
+        border-radius: 25px;
+        background-image: url('../img/most.jpg');
+        background-size: cover;
+    }
+
+    .form-left{
+        width: 100%;
+    }
+
+    .form-right{
+        display: none;
+    }
+
+    .input-fields p{
+        color: white;
+    }
+
+
+
+}
